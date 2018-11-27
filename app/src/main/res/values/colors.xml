@@ -11,4 +11,6 @@
     <color name="greyText">#808080</color>
     <color name="purpleText">#0A0819</color>
     <color name="whiteText">#ffffff</color>
+    <color name="white">#FFF</color>
+    <color name="fb_blue">#2D509B</color>
 </resources>
