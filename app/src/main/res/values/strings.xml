@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Baddelni</string>
+    <string name="don_t_have_account_sign_in_here">Don\'t have account Sign In Here</string>
+    <string name="e_mail">E-mail</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+</resources>
