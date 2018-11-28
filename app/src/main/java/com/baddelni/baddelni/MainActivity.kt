@@ -1,7 +1,8 @@
-package com.baddelni
+package com.baddelni.baddelni
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.baddelni.baddelni.R
 
 class MainActivity : AppCompatActivity() {
 

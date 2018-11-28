@@ -13,4 +13,6 @@
     <color name="whiteText">#ffffff</color>
     <color name="white">#FFF</color>
     <color name="fb_blue">#2D509B</color>
+    <color name="lightTranspatentWhite">#b9ffffff</color>
+    <color name="lightTransparentBlack">#19000000</color>
 </resources>
