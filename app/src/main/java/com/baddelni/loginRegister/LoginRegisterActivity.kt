@@ -1,9 +1,9 @@
-package com.baddelni.baddelni.loginRegister
+package com.baddelni.loginRegister
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import com.baddelni.baddelni.R
+import com.baddelni.R
 import kotlinx.android.synthetic.main.activity_login_register.*
 
 class LoginRegisterActivity : AppCompatActivity() {
