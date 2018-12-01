@@ -18,4 +18,9 @@
     <string name="country">Country</string>
     <string name="name">Name</string>
     <string name="create_account">Create Account</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="categories">Categories</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
 </resources>

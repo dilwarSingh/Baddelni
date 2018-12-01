@@ -20,6 +20,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".loginRegister.interests.InterestsActivity" />
+        <activity android:name=".account.accountHome" />
+        <activity android:name=".account.ExchangeDetail" />
+        <activity android:name=".account.EditProfileActivity" />
+
+
     </application>
 
 </manifest>

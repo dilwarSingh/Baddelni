@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.baddelni.baddelni.MainActivity
 
 import com.baddelni.baddelni.R
 import com.baddelni.baddelni.loginRegister.interests.InterestsActivity
@@ -23,7 +24,7 @@ class LoginFragment : Fragment() {
         emailCard.setOnClickListener { (context as LoginRegisterActivity).changeContainerFragment(EmailFragment()) }
 
 
-        googleCard.setOnClickListener { context?.startActivity(Intent(context as LoginRegisterActivity, InterestsActivity::class.java)) }
-        fbCard.setOnClickListener { googleCard.performClick() }
+        googleCard.setOnClickListener { context?.startActivity(Intent(context, InterestsActivity::class.java)) }
+        fbCard.setOnClickListener { context?.startActivity(Intent(context, MainActivity::class.java)) }
     }
 }

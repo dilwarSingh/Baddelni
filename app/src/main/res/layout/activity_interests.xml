@@ -61,21 +61,20 @@
 
     <Button
         android:id="@+id/doneBt"
-        style="@android:style/Widget.Material.Button.Borderless"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/lightTransparentBlack"
-        android:drawablePadding="16dp"
+        android:layout_marginBottom="8dp"
+        android:drawablePadding="8dp"
         android:drawableStart="@drawable/green_tick"
-        android:padding="8dp"
         android:paddingEnd="16dp"
         android:paddingStart="16dp"
         android:text="Done"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:textColor="#48D360"
+        android:textAllCaps="false"
+        android:textColor="@color/green"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>

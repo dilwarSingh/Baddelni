@@ -1,7 +1,9 @@
 package com.baddelni.baddelni.loginRegister.interests
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.baddelni.baddelni.MainActivity
 import com.baddelni.baddelni.R
 import kotlinx.android.synthetic.main.activity_interests.*
 
@@ -14,7 +16,7 @@ class InterestsActivity : AppCompatActivity() {
         val adapterInterests = AdapterInterests(genrateNames(), this)
         interestRecycler.adapter = adapterInterests
 
-
+        doneBt.setOnClickListener { startActivity(Intent(this, MainActivity::class.java)) }
     }
 
     private fun genrateNames(): MutableList<String> {
