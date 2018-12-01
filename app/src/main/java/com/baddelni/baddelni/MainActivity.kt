@@ -4,7 +4,10 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import com.baddelni.baddelni.account.accountHome
+import com.baddelni.baddelni.account.AccountHomeFragment
+import com.baddelni.baddelni.categories.CategoryFragment
+import com.baddelni.baddelni.notifications.NotificationFragment
+import com.baddelni.baddelni.settings.SettingsFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.layout_bottom_navigation.view.*
 
@@ -21,28 +24,41 @@ class MainActivity : AppCompatActivity() {
 
     private fun initBottomNavigationView() {
 
+
+        homeBt.title.text = getString(R.string.home)
+        accountBt.title.text = getString(R.string.account)
+        notificationBt.title.text = getString(R.string.notifications)
+        settingsBt.title.text = getString(R.string.settings)
+        categoryBt.title.text = getString(R.string.categories)
+
         homeBt.setOnClickListener {
             makeAllUnActive()
             makeActive(it)
-            setContentFragment(accountHome())
         }
         accountBt.setOnClickListener {
             makeAllUnActive()
             makeActive(it)
-        }
-        notificationBt.setOnClickListener {
-            makeAllUnActive()
-            makeActive(it)
-        }
-        settingsBt.setOnClickListener {
-            makeAllUnActive()
-            makeActive(it)
+            setContentFragment(AccountHomeFragment())
+
         }
         categoryBt.setOnClickListener {
             makeAllUnActive()
             makeActive(it)
+            setContentFragment(CategoryFragment())
+        }
+        notificationBt.setOnClickListener {
+            makeAllUnActive()
+            makeActive(it)
+            setContentFragment(NotificationFragment())
         }
 
+        settingsBt.setOnClickListener {
+            makeAllUnActive()
+            makeActive(it)
+            setContentFragment(SettingsFragment())
+        }
+
+        accountBt.performClick()
 
     }
 

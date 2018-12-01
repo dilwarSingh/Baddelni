@@ -20,9 +20,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".loginRegister.interests.InterestsActivity" />
-        <activity android:name=".account.accountHome" />
         <activity android:name=".account.ExchangeDetail" />
         <activity android:name=".account.EditProfileActivity" />
+        <activity android:name=".account.RequestsActivity" />
+        <activity android:name=".packageSection.BuyPackageActivity" />
+        <activity android:name=".packageSection.CreatePostActivity" />
+        <activity android:name=".categories.CategoryDetailActivity" />
+        <activity android:name=".categories.ProductDetailActivity" />
 
 
     </application>

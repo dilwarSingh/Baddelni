@@ -23,4 +23,20 @@
     <string name="categories">Categories</string>
     <string name="notifications">Notifications</string>
     <string name="settings">Settings</string>
+    <string name="add_other">Add Other</string>
+    <string name="create">Create</string>
+    <string name="buyPost">Buy Post</string>
+    <string name="deleteAll">Delete All</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions"><![CDATA[Terms & conditions]]></string>
+    <string name="help_center">Help Center</string>
+    <string name="about_app">About App</string>
+    <string name="buy_post">Buy Post</string>
+    <string name="advertise_with_us">Advertise with us</string>
+    <string name="change_language">change Language</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="logout">Logout</string>
+    <string name="interests">Interests</string>
+    <string name="category">Category</string>
+    <string name="addNew">New Add</string>
 </resources>

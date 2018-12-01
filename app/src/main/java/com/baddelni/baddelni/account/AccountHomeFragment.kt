@@ -8,10 +8,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.baddelni.baddelni.R
+import com.baddelni.baddelni.packageSection.BuyPackageActivity
+import com.baddelni.baddelni.packageSection.CreatePostActivity
 import kotlinx.android.synthetic.main.fragment_account.*
 import kotlinx.android.synthetic.main.layout_account.view.*
 
-class accountHome : Fragment() {
+class AccountHomeFragment : Fragment() {
 
     lateinit var activity: AppCompatActivity
 
@@ -24,6 +26,12 @@ class accountHome : Fragment() {
 
         recycler.adapter = AdapterAccountHome(activity)
         profileSection.profileImage.setOnClickListener { startActivity(Intent(activity, EditProfileActivity::class.java)) }
+
+        profileSection.requestBt.setOnClickListener { startActivity(Intent(activity, RequestsActivity::class.java)) }
+
+        profileSection.avaliablePostBt.setOnClickListener { startActivity(Intent(activity, BuyPackageActivity::class.java)) }
+
+        newPostBt.setOnClickListener { startActivity(Intent(activity, CreatePostActivity::class.java)) }
 
     }
 }

@@ -22,8 +22,8 @@
         android:text="3"
         android:textColor="@color/gradient2"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView9"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@+id/avaliablePostBt"
+        app:layout_constraintStart_toStartOf="@+id/avaliablePostBt"
         app:layout_constraintTop_toTopOf="@+id/profileImage" />
 
     <TextView
@@ -34,8 +34,8 @@
         android:textColor="@color/gradient2"
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/avaliableBost"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintStart_toStartOf="@+id/textView7" />
+        app:layout_constraintEnd_toEndOf="@+id/requestBt"
+        app:layout_constraintStart_toStartOf="@+id/requestBt" />
 
     <ImageView
         android:id="@+id/textView12"
@@ -48,29 +48,29 @@
         app:layout_constraintTop_toTopOf="@+id/requests" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/avaliablePostBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:text="Avaliable Bost"
+        android:text="Avaliable Posts"
         android:textSize="11sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/requestBt"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toEndOf="@+id/profileImage"
         app:layout_constraintTop_toBottomOf="@+id/avaliableBost" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/requestBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Requests"
         android:textSize="11sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/avaliablePostBt"
         app:layout_constraintEnd_toStartOf="@+id/likes"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView9" />
+        app:layout_constraintStart_toEndOf="@+id/avaliablePostBt" />
 
     <TextView
         android:id="@+id/likes"
@@ -79,10 +79,10 @@
         android:layout_marginEnd="32dp"
         android:text="23"
         android:textSize="11sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/requestBt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView7" />
+        app:layout_constraintStart_toEndOf="@+id/requestBt" />
 
     <TextView
         android:id="@+id/newRequestBt"
@@ -101,8 +101,8 @@
         app:layout_constraintEnd_toStartOf="@+id/accountBt"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintStart_toStartOf="@+id/avaliablePostBt"
+        app:layout_constraintTop_toBottomOf="@+id/avaliablePostBt" />
 
     <TextView
         android:id="@+id/accountBt"
