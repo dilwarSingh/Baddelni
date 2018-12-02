@@ -25,6 +25,6 @@ class LoginFragment : Fragment() {
 
 
         googleCard.setOnClickListener { context?.startActivity(Intent(context, InterestsActivity::class.java)) }
-        fbCard.setOnClickListener { context?.startActivity(Intent(context, MainActivity::class.java)) }
+        fbCard.setOnClickListener { context?.startActivity(Intent(context, InterestsActivity::class.java)) }
     }
 }

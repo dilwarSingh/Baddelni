@@ -16,7 +16,7 @@ class InterestsActivity : AppCompatActivity() {
         val adapterInterests = AdapterInterests(genrateNames(), this)
         interestRecycler.adapter = adapterInterests
 
-        doneBt.setOnClickListener { startActivity(Intent(this, MainActivity::class.java)) }
+        doneBt.setOnClickListener { startActivity(Intent(this, MainActivity::class.java)); finish() }
     }
 
     private fun genrateNames(): MutableList<String> {
