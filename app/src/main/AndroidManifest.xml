@@ -27,6 +27,7 @@
         <activity android:name=".packageSection.CreatePostActivity" />
         <activity android:name=".categories.CategoryDetailActivity" />
         <activity android:name=".categories.ProductDetailActivity" />
+        <activity android:name=".account.TipsActivity" />
 
 
     </application>

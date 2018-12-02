@@ -13,5 +13,7 @@ class CategoryDetailActivity : AppCompatActivity() {
 
         recycler.adapter = AdapterCategoryDetail(this)
         include.text.text = getString(R.string.addNew)
+        backBt.setOnClickListener { finish() }
+
     }
 }

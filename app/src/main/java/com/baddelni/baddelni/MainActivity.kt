@@ -33,21 +33,25 @@ class MainActivity : AppCompatActivity() {
 
         homeBt.setOnClickListener {
             makeAllUnActive()
+            homeBt.image.setImageDrawable(resources.getDrawable(R.drawable.home_selected))
             makeActive(it)
         }
         accountBt.setOnClickListener {
             makeAllUnActive()
             makeActive(it)
+            accountBt.image.setImageDrawable(resources.getDrawable(R.drawable.account_selected))
             setContentFragment(AccountHomeFragment())
 
         }
         categoryBt.setOnClickListener {
             makeAllUnActive()
+            categoryBt.image.setImageDrawable(resources.getDrawable(R.drawable.category_selected))
             makeActive(it)
             setContentFragment(CategoryFragment())
         }
         notificationBt.setOnClickListener {
             makeAllUnActive()
+            notificationBt.image.setImageDrawable(resources.getDrawable(R.drawable.notification_selected))
             makeActive(it)
             setContentFragment(NotificationFragment())
         }
@@ -55,9 +59,11 @@ class MainActivity : AppCompatActivity() {
         settingsBt.setOnClickListener {
             makeAllUnActive()
             makeActive(it)
+            settingsBt.image.setImageDrawable(resources.getDrawable(R.drawable.setting_selected))
             setContentFragment(SettingsFragment())
         }
 
+        makeAllUnActive()
         accountBt.performClick()
 
     }
@@ -74,6 +80,11 @@ class MainActivity : AppCompatActivity() {
         settingsBt.title.setTextColor(resources.getColor(R.color.greyText))
         categoryBt.title.setTextColor(resources.getColor(R.color.greyText))
 
+        homeBt.image.setImageDrawable(resources.getDrawable(R.drawable.home_unselected))
+        accountBt.image.setImageDrawable(resources.getDrawable(R.drawable.account_unselected))
+        notificationBt.image.setImageDrawable(resources.getDrawable(R.drawable.notifications_unselected))
+        settingsBt.image.setImageDrawable(resources.getDrawable(R.drawable.settings_unselected))
+        categoryBt.image.setImageDrawable(resources.getDrawable(R.drawable.category_unselected))
     }
 
     private fun setContentFragment(fragment: Fragment) {

@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.baddelni.baddelni.R
+import com.baddelni.baddelni.loginRegister.LoginRegisterActivity
 import com.baddelni.baddelni.packageSection.BuyPackageActivity
 import kotlinx.android.synthetic.main.fragment_settings.*
 
@@ -23,5 +24,10 @@ class SettingsFragment : Fragment() {
 
         buyPosts.setOnClickListener { startActivity(Intent(context!!, BuyPackageActivity::class.java)) }
 
+        logoutBt.setOnClickListener {
+            val intent = Intent(context!!, LoginRegisterActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+        }
     }
 }

@@ -16,5 +16,7 @@ class RequestsActivity : AppCompatActivity() {
 
         recycler.adapter = AdapterRequests(this)
         include.newPostBt.setOnClickListener { startActivity(Intent(this, CreatePostActivity::class.java)) }
+        backBt.setOnClickListener { finish() }
+
     }
 }

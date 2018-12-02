@@ -11,6 +11,7 @@ class ProductDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_product_detail)
 
         recycler.adapter = AdapterProductDetail(this)
+        backBt.setOnClickListener { finish() }
 
     }
 }
