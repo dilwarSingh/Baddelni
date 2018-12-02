@@ -13,7 +13,8 @@ class CreatePostActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_post)
 
-        include.newPostText.text = getString(R.string.buyPost)
+        include.newPostText.text = getString(R.string.buyNewPosts)
+        include.text.text = getString(R.string.avaliablePosts)
         backBt.setOnClickListener { finish() }
         include.newPostBt.setOnClickListener { startActivity(Intent(this, BuyPackageActivity::class.java)) }
     }

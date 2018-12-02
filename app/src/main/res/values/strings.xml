@@ -39,4 +39,7 @@
     <string name="interests">Interests</string>
     <string name="category">Category</string>
     <string name="addNew">New Add</string>
+    <string name="buyNewPosts">Buy New Post</string>
+    <string name="avaliablePosts">Available Posts</string>
+    <string name="already_have_account_log_in_here">Already have account Log In Here</string>
 </resources>

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import android.widget.Toast
 import com.baddelni.baddelni.account.AccountHomeFragment
 import com.baddelni.baddelni.categories.CategoryFragment
 import com.baddelni.baddelni.notifications.NotificationFragment
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         homeBt.setOnClickListener {
             makeAllUnActive()
+            Toast.makeText(this, "Home under development", Toast.LENGTH_SHORT).show()
             homeBt.image.setImageDrawable(resources.getDrawable(R.drawable.home_selected))
             makeActive(it)
         }
@@ -90,5 +92,6 @@ class MainActivity : AppCompatActivity() {
     private fun setContentFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().replace(frameLayout.id, fragment).commit()
     }
+
 
 }

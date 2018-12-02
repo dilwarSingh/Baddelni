@@ -2,6 +2,7 @@ package com.baddelni.baddelni.categories
 
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -23,6 +24,12 @@ class AdapterCategories(private var context: Context) : RecyclerView.Adapter<Ada
 
         viewHolder.text.text = "Name $position"
         viewHolder.checkBox.isEnabled = false
+
+        viewHolder.checkBox.isClickable = false
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            viewHolder.checkBox.isFocusable = false
+        }
+
 
         viewHolder.itemView.setOnClickListener { context.startActivity(Intent(context, CategoryDetailActivity::class.java)) }
 

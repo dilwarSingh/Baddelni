@@ -1,6 +1,7 @@
 package com.baddelni.baddelni.settings
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -29,5 +30,25 @@ class SettingsFragment : Fragment() {
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
+
+        privacyPolicy.setOnClickListener {
+            openBrowserWithLink("http://www.google.com")
+        }
+        tnc.setOnClickListener {
+            openBrowserWithLink("http://www.google.com")
+        }
+        helpCenter.setOnClickListener {
+            openBrowserWithLink("http://www.google.com")
+        }
+        aboutApp.setOnClickListener {
+            openBrowserWithLink("http://www.google.com")
+        }
+
+    }
+
+    private fun openBrowserWithLink(url: String) {
+
+        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(browserIntent)
     }
 }

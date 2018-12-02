@@ -20,4 +20,7 @@
     <color name="red">#f13b27</color>
     <color name="redTransparent">#ffb5ad</color>
     <color name="lightRed">#ffcec9</color>
+
+    <color name="greyGradient1">#8E8E93</color>
+    <color name="greyGradient2">#D4D3D2</color>
 </resources>

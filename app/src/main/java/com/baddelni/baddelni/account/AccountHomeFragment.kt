@@ -25,12 +25,10 @@ class AccountHomeFragment : Fragment() {
         activity = context as AppCompatActivity
 
         recycler.adapter = AdapterAccountHome(activity)
+
         profileSection.profileImage.setOnClickListener { startActivity(Intent(activity, EditProfileActivity::class.java)) }
-
-        profileSection.requestBt.setOnClickListener { startActivity(Intent(activity, RequestsActivity::class.java)) }
-
-        profileSection.avaliablePostBt.setOnClickListener { startActivity(Intent(activity, BuyPackageActivity::class.java)) }
-
+        profileSection.requestLL.setOnClickListener { startActivity(Intent(activity, RequestsActivity::class.java)) }
+        profileSection.avaliablePostLL.setOnClickListener { startActivity(Intent(activity, BuyPackageActivity::class.java)) }
         newPostBt.setOnClickListener { startActivity(Intent(activity, CreatePostActivity::class.java)) }
 
     }
