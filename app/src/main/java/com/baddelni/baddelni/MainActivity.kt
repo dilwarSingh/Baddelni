@@ -37,6 +37,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Home under development", Toast.LENGTH_SHORT).show()
             homeBt.image.setImageDrawable(resources.getDrawable(R.drawable.home_selected))
             makeActive(it)
+            setContentFragment(HomeFragment())
+
         }
         accountBt.setOnClickListener {
             makeAllUnActive()
@@ -66,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         makeAllUnActive()
-        accountBt.performClick()
+        homeBt.performClick()
 
     }
 
