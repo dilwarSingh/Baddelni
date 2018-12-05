@@ -155,6 +155,7 @@
                     android:background="@color/transparent"
                     android:drawableEnd="@drawable/down_arrow"
                     android:ems="10"
+                    android:enabled="false"
                     android:inputType="textPersonName"
                     android:text="Category"
                     android:textColor="@color/greyText" />
