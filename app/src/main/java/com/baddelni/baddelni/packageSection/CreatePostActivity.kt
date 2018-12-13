@@ -16,6 +16,7 @@ class CreatePostActivity : AppCompatActivity() {
         include.newPostText.text = getString(R.string.buyNewPosts)
         include.text.text = getString(R.string.avaliablePosts)
         backBt.setOnClickListener { finish() }
+        include.newPostText.setCompoundDrawablesWithIntrinsicBounds(R.drawable.shop, 0, 0, 0);
         include.newPostBt.setOnClickListener { startActivity(Intent(this, BuyPackageActivity::class.java)) }
     }
 

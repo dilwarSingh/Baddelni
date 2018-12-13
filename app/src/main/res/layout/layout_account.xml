@@ -95,7 +95,7 @@
 
         <ImageView
             android:id="@+id/textView12"
-            android:layout_width="13dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:background="@drawable/heart"
@@ -107,6 +107,7 @@
             android:id="@+id/likes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:gravity="center"
             android:text="23"
             android:textSize="11sp"

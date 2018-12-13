@@ -84,10 +84,11 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/handshake" />
 
     <TextView
         android:id="@+id/textView31"
@@ -98,17 +99,38 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:elevation="11dp"
-        android:text="congrats Message"
-        android:textSize="30sp"
+        android:fontFamily="@font/free_script"
+        android:text="Congratulation"
+        android:textColor="#DF7A46"
+        android:textSize="70sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="11dp"
+        android:text="Baddelni Deal"
+        android:textColor="#DF7A46"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
 
     <android.support.constraint.Group
         android:id="@+id/congoGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="textView31,imageView19" />
+        app:constraint_referenced_ids="textView31,imageView19,textView32" />
 
 </android.support.constraint.ConstraintLayout>

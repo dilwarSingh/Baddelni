@@ -33,7 +33,7 @@
     <string name="about_app">About App</string>
     <string name="buy_post">Buy Post</string>
     <string name="advertise_with_us">Advertise with us</string>
-    <string name="change_language">change Language</string>
+    <string name="change_language">Change Language</string>
     <string name="contact_us">Contact Us</string>
     <string name="logout">Logout</string>
     <string name="interests">Interests</string>
@@ -42,4 +42,6 @@
     <string name="buyNewPosts">Buy New Post</string>
     <string name="avaliablePosts">Available Posts</string>
     <string name="already_have_account_log_in_here">Already have account Log In Here</string>
+    <string name="newPost">New Post</string>
+    <string name="favorites">Favorites</string>
 </resources>
