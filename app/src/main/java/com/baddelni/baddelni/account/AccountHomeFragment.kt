@@ -26,8 +26,9 @@ class AccountHomeFragment : Fragment() {
 
         recycler.adapter = AdapterAccountHome(activity)
 
-        profileSection.profileImage.setOnClickListener { startActivity(Intent(activity, EditProfileActivity::class.java)) }
+        profileSection.accountBt.setOnClickListener { startActivity(Intent(activity, EditProfileActivity::class.java)) }
         profileSection.requestLL.setOnClickListener { startActivity(Intent(activity, RequestsActivity::class.java)) }
+        profileSection.newRequestBt.setOnClickListener { startActivity(Intent(activity, RequestsActivity::class.java)) }
         profileSection.avaliablePostLL.setOnClickListener { startActivity(Intent(activity, BuyPackageActivity::class.java)) }
         profileSection.likesLL.setOnClickListener { startActivity(Intent(activity, FavoritesActivity::class.java)) }
         newPostBt.setOnClickListener { startActivity(Intent(activity, CreatePostActivity::class.java)) }

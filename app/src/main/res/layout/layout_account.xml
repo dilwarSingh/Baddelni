@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/profileImage"
@@ -19,11 +20,15 @@
         android:id="@+id/avaliablePostLL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
         android:orientation="vertical"
         app:layout_constraintEnd_toStartOf="@+id/requestLL"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toEndOf="@+id/profileImage"
         app:layout_constraintTop_toTopOf="@+id/profileImage">
 
@@ -43,8 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Avaliable Posts"
-            android:textSize="11sp"
+            android:text="Available Posts"
+            android:textSize="12sp"
             tools:layout_editor_absoluteX="120dp"
             tools:layout_editor_absoluteY="37dp" />
     </LinearLayout>
@@ -53,6 +58,9 @@
         android:id="@+id/requestLL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/avaliablePostLL"
         app:layout_constraintEnd_toStartOf="@+id/likesLL"
@@ -63,6 +71,8 @@
             android:id="@+id/requests"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
             android:gravity="center"
             android:text="9"
             android:textColor="@color/gradient2"
@@ -74,8 +84,10 @@
             android:id="@+id/requestBt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
             android:text="Requests"
-            android:textSize="11sp"
+            android:textSize="12sp"
             tools:layout_editor_absoluteX="234dp"
             tools:layout_editor_absoluteY="37dp" />
 
@@ -86,7 +98,10 @@
         android:id="@+id/likesLL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/requestLL"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,6 +114,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:background="@drawable/heart"
+            android:clickable="false"
+            android:focusable="false"
             android:padding="2dp"
             tools:layout_editor_absoluteX="305dp"
             tools:layout_editor_absoluteY="11dp" />
@@ -108,9 +125,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:clickable="false"
+            android:focusable="false"
             android:gravity="center"
             android:text="23"
-            android:textSize="11sp"
+            android:textSize="12sp"
             tools:layout_editor_absoluteX="305dp"
             tools:layout_editor_absoluteY="37dp" />
     </LinearLayout>
@@ -122,14 +141,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/rounded_gradient"
+        android:clickable="false"
         android:drawableLeft="@drawable/star_white"
         android:drawablePadding="8dp"
+        android:focusable="false"
         android:padding="4dp"
         android:paddingEnd="12dp"
         android:paddingStart="12dp"
         android:text="New Request"
         android:textColor="@color/white"
         android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/accountBt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profileImage"
         app:layout_constraintStart_toStartOf="@+id/avaliablePostLL"
         app:layout_constraintTop_toBottomOf="@+id/avaliablePostLL" />
 
@@ -138,6 +162,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_transparent"
+        android:clickable="false"
+        android:focusable="false"
         android:padding="4dp"
         android:paddingEnd="12dp"
         android:paddingStart="12dp"
@@ -145,13 +171,16 @@
         android:textColor="@color/gradient2"
         android:textSize="12sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/newRequestBt"
-        app:layout_constraintEnd_toEndOf="@+id/likesLL" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/newRequestBt" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+
         android:text="User-Name"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/profileImage"
@@ -161,12 +190,13 @@
         android:id="@+id/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:drawableLeft="@drawable/location"
         android:drawablePadding="8dp"
         android:text="Location"
         android:textSize="12sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/name"
-        app:layout_constraintEnd_toEndOf="@+id/accountBt" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/profileDescription"

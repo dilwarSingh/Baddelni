@@ -16,7 +16,8 @@ class ExchangeDetail : AppCompatActivity() {
         declineBt.setOnClickListener { finish() }
         backBt.setOnClickListener { finish() }
         acceptBt.setOnClickListener {
+            startActivity(Intent(this, TipsActivity::class.java))
             finish()
-            startActivity(Intent(this, TipsActivity::class.java)) }
+        }
     }
 }

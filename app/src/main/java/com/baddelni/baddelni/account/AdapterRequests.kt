@@ -22,7 +22,7 @@ class AdapterRequests(val context: Context) : RecyclerView.Adapter<AdapterReques
 
     override fun onBindViewHolder(viewHolder: ViewHolder, postion: Int) {
         viewHolder.itemView.setOnClickListener { context.startActivity(Intent(context, ExchangeDetail::class.java)) }
-
+        (context as RequestsActivity).finish()
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)

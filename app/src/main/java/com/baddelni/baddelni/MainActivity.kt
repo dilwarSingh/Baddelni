@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import android.widget.Toast
 import com.baddelni.baddelni.account.AccountHomeFragment
 import com.baddelni.baddelni.categories.CategoryFragment
 import com.baddelni.baddelni.notifications.NotificationFragment
