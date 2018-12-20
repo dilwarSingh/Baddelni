@@ -3,6 +3,7 @@ package com.baddelni.baddelni.account
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import com.baddelni.baddelni.R
 import com.baddelni.baddelni.packageSection.CreatePostActivity
 import kotlinx.android.synthetic.main.layout_top_view.view.*
@@ -16,7 +17,13 @@ class RequestsActivity : AppCompatActivity() {
 
         recycler.adapter = AdapterRequests(this)
         include.newPostBt.setOnClickListener { startActivity(Intent(this, CreatePostActivity::class.java)) }
-        backBt.setOnClickListener { finish() }
+        backBt.setOnClickListener { onBackPressed() }
 
+    }
+
+    override fun onBackPressed() {
+
+        Log.d(RequestsActivity::class.java.simpleName, "onBackPressed in activity")
+        finish()
     }
 }

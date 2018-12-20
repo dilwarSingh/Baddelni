@@ -1,11 +1,13 @@
 package com.baddelni.baddelni.categories
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.baddelni.baddelni.R
+import com.baddelni.baddelni.account.ExchangeDetail
 
 class AdapterProductDetail(val context: Context) : RecyclerView.Adapter<AdapterProductDetail.ViewHolder>() {
 
@@ -30,6 +32,7 @@ class AdapterProductDetail(val context: Context) : RecyclerView.Adapter<AdapterP
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         if (position == 0) return
+        viewHolder.itemView.setOnClickListener { context.startActivity(Intent(context, ExchangeDetail::class.java)) }
 
     }
 

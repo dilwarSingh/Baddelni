@@ -3,7 +3,7 @@ package com.baddelni.baddelni.account
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
-import android.view.View.GONE
+import android.view.View
 import com.baddelni.baddelni.R
 import kotlinx.android.synthetic.main.activity_tips.*
 
@@ -15,10 +15,16 @@ class TipsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_tips)
 
 
-        Handler().postDelayed({
-            runOnUiThread { congoGroup.visibility = GONE }
-        }, 2000)
 
-        acceptBt.setOnClickListener { finish() }
+        acceptBt.setOnClickListener {
+            congoGroup.visibility = View.VISIBLE
+            Handler().postDelayed({
+                runOnUiThread {
+                    finish()
+                    //congoGroup.visibility = GONE
+                }
+            }, 2000)
+
+        }
     }
 }

@@ -21,8 +21,10 @@ class AdapterRequests(val context: Context) : RecyclerView.Adapter<AdapterReques
     override fun getItemCount() = 10
 
     override fun onBindViewHolder(viewHolder: ViewHolder, postion: Int) {
-        viewHolder.itemView.setOnClickListener { context.startActivity(Intent(context, ExchangeDetail::class.java)) }
-        (context as RequestsActivity).finish()
+        viewHolder.itemView.setOnClickListener {
+            context.startActivity(Intent(context, ExchangeDetail::class.java))
+            (context as RequestsActivity).finish()
+        }
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
